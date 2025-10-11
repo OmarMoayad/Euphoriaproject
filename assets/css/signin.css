@@ -28,12 +28,9 @@
 }
 
 
-body, html {
-    overflow: hidden;
-    height: 100%;
-}
+
 .heightofcontent{
-    height: 685px;
+    height: 658px;
 }
 /* Sign In Page */
 
