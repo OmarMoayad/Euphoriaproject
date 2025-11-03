@@ -1,0 +1,9 @@
+
+.text-secondary{
+    color:#3C4242;
+}
+
+.form-check-input:checked {
+    background-color: #626262;
+    border-color: #626262;
+}

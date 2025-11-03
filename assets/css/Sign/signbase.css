@@ -27,30 +27,16 @@
     background-color: #F6F6F6;
 }
 
-
-
 .heightofcontent{
     height: 658px;
 }
-/* Sign In Page */
-
-h1{
-
-font-family: 'Core Sans C';
-font-size: 34px;
-font-style: normal;
-font-weight: 700;
-color: #333333;
-line-height: 33px;
-letter-spacing: 0.02em;
-margin-bottom:30px ;
-margin-top: 30px;
-
-
-
+.text-primary-color{
+    color: var(--main-color);
 }
-.text-secondary{
-    color:#3C4242;
+:root {
+  --main-color: #8A33FD;
 }
-
-
+.sizeofarrow{
+    font-size: 10px;
+    margin-top: 10px;
+}
