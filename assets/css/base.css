@@ -1,3 +1,6 @@
 :root {
     --primary-color: #8A33FD;
 }
+body {
+    padding-top: 70px; 
+}

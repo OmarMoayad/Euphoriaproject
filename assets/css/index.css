@@ -1,5 +1,86 @@
+:root {
+    --primary-color: #8A33FD;
+}
 .bg-f6f6f6 {
     background-color: #F6F6F6;}
 
 .bg-3C4242 {
     background-color: #3C4242;}    
+body {
+    padding-top: 70px; 
+}
+.carousel-indicators [data-bs-target] {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 63px;
+    height: 10px;
+}
+.carouselbuttons1{
+        border-radius:  14px 0 0 14px; ;
+
+}
+.carouselbuttons2{
+        border-radius: 0px 14px 14px 0px ;
+
+}
+.carousel-caption {
+  right: auto;
+  left: 10%;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-align: left;
+}
+h1{
+    font-size: 110px;
+}
+ .carouselbutton{
+    width: 40%;
+ } 
+ /* ✅ RESPONSIVE HERO TEXT */
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .carouselbutton {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carouselbutton {
+        width: 100%;
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+}
+.offers .card-img {
+    height: 350px;
+    object-fit: cover;
+}
+.border-color{
+    border-color: var(--primary-color) !important;
+
+}
