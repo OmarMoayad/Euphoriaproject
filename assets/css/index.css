@@ -1,42 +1,51 @@
 :root {
     --primary-color: #8A33FD;
 }
-.bg-f6f6f6 {
-    background-color: #F6F6F6;}
 
-.bg-3C4242 {
-    background-color: #3C4242;}    
-body {
-    padding-top: 70px; 
+.bg-f6f6f6 {
+    background-color: #F6F6F6;
 }
+
+
+body {
+    padding-top: 70px;
+}
+
 .carousel-indicators [data-bs-target] {
     margin-right: 0px;
     margin-left: 0px;
     width: 63px;
     height: 10px;
 }
-.carouselbuttons1{
-        border-radius:  14px 0 0 14px; ;
+
+.carouselbuttons1 {
+    border-radius: 14px 0 0 14px;
+    ;
 
 }
-.carouselbuttons2{
-        border-radius: 0px 14px 14px 0px ;
+
+.carouselbuttons2 {
+    border-radius: 0px 14px 14px 0px;
 
 }
+
 .carousel-caption {
-  right: auto;
-  left: 10%;
-  bottom: 50%;
-  transform: translateY(50%);
-  text-align: left;
+    right: auto;
+    left: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    text-align: left;
 }
-h1{
+
+h1 {
     font-size: 110px;
 }
- .carouselbutton{
+
+.carouselbutton {
     width: 40%;
- } 
- /* ✅ RESPONSIVE HERO TEXT */
+}
+
+/* ✅ RESPONSIVE HERO TEXT */
 
 
 @media (max-width: 1200px) {
@@ -62,6 +71,7 @@ h1{
         font-size: 18px;
     }
 }
+
 @media (max-width: 768px) {
     .carouselbutton {
         width: 60%;
@@ -76,11 +86,165 @@ h1{
         margin-bottom: 25px;
     }
 }
+
 .offers .card-img {
     height: 350px;
     object-fit: cover;
 }
-.border-color{
+
+.border-color {
     border-color: var(--primary-color) !important;
 
+}
+
+#newArrivalCarousel .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newArrivalCarousel .carousel-control-prev {
+    left: -60px;
+}
+
+#newArrivalCarousel .carousel-control-next {
+    right: -60px;
+}
+
+#newArrivalCarousel .custom-arrow i {
+    font-size: 28px;
+    color: #3C4242;
+}
+
+.saving-button {
+    width: 7.5rem;
+    height: 2.5rem;
+
+}
+
+.saving-button2 {
+    width: 10rem;
+    height: 2.5rem;
+
+}
+
+.saving-color {
+    color: #3C4242
+}
+
+.savingzone {
+    font-family: 'Core Sans C', sans-serif;
+}
+
+.savingzone .btn-secondary {
+    background-color: #3C4242;
+    border-color: #3C4242;
+    width: 122px;
+}
+
+/* Fix for savingzone text overflow on smaller screens */
+.savingzone .card-img {
+    height: 640px;
+    object-fit: fill;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .savingzone .card-img {
+        height: 640px;
+        /* Slightly taller on mobile to ensure all text fits including buttons */
+    }
+}
+
+.Categories-Men .card-img {
+    object-fit: fill;
+    height: 350px;
+    width: 100%;
+}
+
+.Categories-Men {
+    font-family: Causten;
+
+}
+
+.Categories-Men .card-title {
+    font-size: 20px;
+}
+
+.Categories-Men .card-text {
+    font-size: 12px;
+    color: #797979;
+}
+
+.Categories-Men h2 {
+    font-family: 'Core Sans C', sans-serif;
+}
+
+.InTheLimelight span {
+    background-color: #F6F6F6;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.InTheLimelight .card-text {
+    font-size: 12px;
+    color: #797979;
+}
+
+.InTheLimelight .card .wishlist-icon {
+    display: none !important;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.InTheLimelight .card:hover .wishlist-icon {
+    display: block !important;
+}
+
+.InTheLimelight .card .wishlist-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Feedback Section Styles */
+.feedback-card {
+    border-color: #BEBCBD;
+}
+
+.feedback-card h5 {
+    color: #3C4242;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.feedback-card p {
+    color: #807D7E;
+    font-size: 14px;
+}
+
+.custom-indicators {
+    bottom: 0;
+}
+
+.custom-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3C4242;
+    opacity: 0.2;
+    border: none;
+    margin: 0 4px;
+}
+
+.custom-indicators [data-bs-target].active {
+    opacity: 1;
 }
