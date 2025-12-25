@@ -2,9 +2,7 @@
     --primary-color: #8A33FD;
 }
 
-.bg-f6f6f6 {
-    background-color: #F6F6F6;
-}
+
 
 
 body {
@@ -44,8 +42,6 @@ h1 {
 .carouselbutton {
     width: 40%;
 }
-
-/* ✅ RESPONSIVE HERO TEXT */
 
 
 @media (max-width: 1200px) {
@@ -150,7 +146,6 @@ h1 {
     width: 122px;
 }
 
-/* Fix for savingzone text overflow on smaller screens */
 .savingzone .card-img {
     height: 640px;
     object-fit: fill;
@@ -160,7 +155,6 @@ h1 {
 @media (max-width: 768px) {
     .savingzone .card-img {
         height: 640px;
-        /* Slightly taller on mobile to ensure all text fits including buttons */
     }
 }
 
@@ -212,7 +206,7 @@ h1 {
 }
 
 .InTheLimelight .card .wishlist-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Feedback Section Styles */
