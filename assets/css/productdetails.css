@@ -1,0 +1,53 @@
+@import "./base.css";
+
+
+.bg-purple {
+    background-color: var(--primary-color) ;
+}
+
+.bg-purple:hover {
+    background-color: #722ed1 ;
+}
+.border-color {
+  border-color: var(--primary-color) !important;
+}
+
+
+
+.product-thumbnails img {
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.Similarproducts span {
+    background-color: #F6F6F6;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Similarproducts .card-text {
+    font-size: 12px;
+    color: #797979;
+}
+
+.Similarproducts .card .wishlist-icon {
+    display: none !important;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.Similarproducts .card:hover .wishlist-icon {
+    display: block !important;
+}
+
+.Similarproducts .card .wishlist-icon:hover {
+    transform: scale(1.2);
+}
+
+

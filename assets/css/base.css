@@ -10,3 +10,6 @@ body {
 .bg-f6f6f6 {
     background-color: #F6F6F6;
 }
+html, body {
+  max-width: 100%;
+}

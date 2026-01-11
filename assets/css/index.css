@@ -93,32 +93,7 @@ h1 {
 
 }
 
-#newArrivalCarousel .custom-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: none;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#newArrivalCarousel .carousel-control-prev {
-    left: -60px;
-}
-
-#newArrivalCarousel .carousel-control-next {
-    right: -60px;
-}
-
-#newArrivalCarousel .custom-arrow i {
-    font-size: 28px;
-    color: #3C4242;
-}
 
 .saving-button {
     width: 7.5rem;
@@ -209,7 +184,6 @@ h1 {
     transform: scale(1.2);
 }
 
-/* Feedback Section Styles */
 .feedback-card {
     border-color: #BEBCBD;
 }
