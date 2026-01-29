@@ -1,0 +1,107 @@
+html,
+body {
+    background-color: #fff;
+    color: #3C4242;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary-color {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.btn-primary-color:hover {
+    background-color: #7126d4 !important;
+    border-color: #7126d4 !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f054";
+    /* FontAwesome chevron-right icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.cart-header-bg {
+    background-color: #3C4242;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.summary-section-bg {
+    background-color: #F6F6F6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cart-item {
+    font-size: 16px;
+}
+
+.quantity-control {
+    background-color: #F6F6F6;
+    border: none !important;
+    padding: 5px 10px;
+}
+
+.quantity-control button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #3C4242;
+}
+
+.quantity-control span {
+    font-weight: bold;
+}
+
+.cart-item .btn-link {
+    color: var(--primary-color) !important;
+}
+
+.cart-item img {
+    width: 6.25rem;
+    height: 7.5rem;
+    object-fit: cover;
+}
+
+.summary-box {
+    padding: 2.5rem;
+}
+
+.summary-box hr {
+    opacity: 0.2;
+}
+
+.bg-light {
+    background-color: #F6F6F6 !important;
+}
+
+.btn-outline-dark {
+    border-color: #BEBCBD !important;
+    color: #3C4242 !important;
+}
+
+@media (max-width: 767.98px) {
+    .cart-item {
+        margin-bottom: 1.25rem;
+        border: 1px solid #eee;
+        border-radius: 0.625rem;
+    }
+
+    .cart-item>div {
+        margin-bottom: 0.625rem;
+        text-align: left !important;
+    }
+
+    .quantity-control {
+        justify-content: flex-start !important;
+        width: fit-content;
+    }
+}
