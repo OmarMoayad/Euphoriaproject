@@ -16,7 +16,9 @@
     background-color: var(--primary-color);
 }
 
-
+.bg-purple {
+    background-color: var(--primary-color);
+}
 
 .social-icon {
     background-color: white;

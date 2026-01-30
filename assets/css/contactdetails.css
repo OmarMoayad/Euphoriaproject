@@ -1,0 +1,185 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.sidebar .nav-link {
+    color: #807D7E;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f6f6f6;
+    color: #3c4242;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f6f6f6;
+    color: #3c4242;
+    border-left: 4px solid #8A33FD;
+    font-weight: 600;
+}
+
+.sidebar-title {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar-subtitle {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+
+/* My Info Sections */
+.info-section-header {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3c4242;
+    margin-bottom: 15px;
+}
+
+.contact-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #edeff2;
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    color: #807D7E;
+    margin-bottom: 5px;
+}
+
+.contact-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3c4242;
+}
+
+.btn-change {
+    color: #3c4242;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.btn-change:hover {
+    color: #8A33FD;
+}
+
+/* Address Cards */
+.address-card {
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+}
+
+.address-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #3c4242;
+}
+
+.address-phone {
+    font-size: 0.9rem;
+    color: #807D7E;
+    margin-bottom: 15px;
+}
+
+.address-details {
+    font-size: 0.9rem;
+    color: #807D7E;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.badge-outline {
+    border: 1px solid #807D7E;
+    color: #807D7E;
+    background: transparent;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.address-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.address-actions a,
+.address-actions button {
+    text-decoration: none;
+    color: #3c4242;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.address-actions a:hover,
+.address-actions button:hover {
+    color: #8A33FD;
+}
+
+.btn-add-new {
+    color: #3c4242;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-add-new:hover {
+    color: #8A33FD;
+}
+
+/* Breadcrumb style */
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #807D7E;
+}
+
+.breadcrumb-item a {
+    color: #807D7E;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item.active {
+    color: #3c4242;
+    font-weight: 500;
+}
+
+.purple-bar {
+    width: 6px;
+    height: 28px;
+    background-color: #8A33FD;
+    border-radius: 10px;
+}
