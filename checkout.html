@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out - Euphoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+</head>
+
+<body>
+
+    <header class="border-bottom border-3">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./assets/images/base/Logo.png" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Contentcollapse"
+                    aria-controls="Contentcollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Contentcollapse">
+                    <div class="navbar-nav-container d-flex justify-content-between align-items-center w-100 ps-lg-5">
+
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="productlist.html">Shop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="productlist.html">Men</a></li>
+                                <li class="nav-item fw-bold"><a class="nav-link active"
+                                        href="productlist.html">Women</a></li>
+                                <li class="nav-item"><a class="nav-link" href="productlist.html">Combos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="productlist.html">Joggers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="flex-shrink-1" style="min-width: 0;">
+                            <form class="position-relative">
+                                <input type="search" class="form-control ps-5 border-0 bg-f6f6f6" placeholder="Search"
+                                    aria-label="Search" style="min-width: 150px;">
+                                <span class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #807D7E;"></i>
+                                </span>
+                            </form>
+                        </div>
+
+                        <div class="d-flex">
+                            <a class="bg-f6f6f6 p-2 ms-2 rounded"><i class="fa-regular fa-heart"
+                                    style="color: #807D7E;"></i></a>
+                            <a class="bg-f6f6f6 p-2 ms-2 rounded"><i class="fa-regular fa-user"
+                                    style="color: #807D7E;"></i></a>
+                            <a class="bg-f6f6f6 p-2 ms-2 rounded"><i class="fa-solid fa-cart-shopping"
+                                    style="color: #807D7E;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5 mt-5">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb" class="mb-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"
+                            class="text-decoration-none text-muted small fw-medium">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted small fw-medium">My
+                            Account</a></li>
+                    <li class="breadcrumb-item active text-dark small fw-medium" aria-current="page">Check Out</li>
+                </ol>
+            </nav>
+
+            <!-- Title -->
+            <div class="d-flex align-items-center mb-5">
+                <div class="bg-purple rounded-pill me-3" style="width: 6px; height: 30px;"></div>
+                <h2 class="text-dark fw-bold mb-0">Check Out</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Left Column: Forms -->
+                <div class="col-lg-8">
+                    <!-- Billing Details -->
+                    <section class="mb-5">
+                        <h4 class="fw-bold mb-4">Billing Details</h4>
+                        <form id="billing-form">
+                            <div class="row g-4">
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label fw-bold">First Name*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label fw-bold">Last Name*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label fw-bold">Country / Region*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Country / Region" required>
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label fw-bold">Company Name</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Company Name (optional)">
+                                </div>
+                                <div class="col-md-12 text-start">
+                                    <label class="form-label fw-bold">Street Address*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="House number and street name" required>
+                                </div>
+                                <div class="col-md-12 text-start">
+                                    <label class="form-label fw-bold">Apt, suite, unit</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="apartment, suite, unit, etc. (optional)">
+                                </div>
+                                <div class="col-md-4 text-start">
+                                    <label class="form-label fw-bold">City*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Town / City" required>
+                                </div>
+                                <div class="col-md-4 text-start">
+                                    <label class="form-label fw-bold">State*</label>
+                                    <select class="form-select bg-f6f6f6 border-0 py-3 px-3" required>
+                                        <option value="" selected disabled>State</option>
+                                        <option value="NY">New York</option>
+                                        <option value="CA">California</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 text-start">
+                                    <label class="form-label fw-bold">Postal Code*</label>
+                                    <input type="text" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Postal Code" required>
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label fw-bold">Phone*</label>
+                                    <input type="tel" class="form-control bg-f6f6f6 border-0 py-3 px-3"
+                                        placeholder="Phone" required>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button type="submit"
+                                    class="btn bg-purple text-white px-5 py-2 rounded-3 fw-medium">Continue to
+                                    delivery</button>
+                            </div>
+
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" id="saveInfo">
+                                <label class="form-check-label text-muted small" for="saveInfo">
+                                    Save my information for a faster checkout.
+                                </label>
+                            </div>
+                        </form>
+                    </section>
+
+                    <hr class="my-5 opacity-10">
+
+                    <!-- Shipping Address -->
+                    <section class="mb-5 text-start">
+                        <h4 class="fw-bold mb-2">Shipping Address</h4>
+                        <p class="text-muted small mb-4">Select the address that matches your card or payment method.
+                        </p>
+
+                        <div class="bg-f6f6f6 rounded-3 p-4">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input mt-0" type="radio" name="shipping-choice"
+                                    id="sameBilling" checked>
+                                <label class="form-check-label fw-bold ms-3" for="sameBilling">
+                                    Same as Billing address
+                                </label>
+                            </div>
+                            <hr class="my-4 opacity-10">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input mt-0" type="radio" name="shipping-choice"
+                                    id="diffShipping">
+                                <label class="form-check-label fw-bold ms-3" for="diffShipping">
+                                    Use a different shipping address
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="my-5 opacity-10">
+
+                    <!-- Shipping Method -->
+                    <section class="mb-5 text-start">
+                        <h4 class="fw-bold mb-4">Shipping Method</h4>
+                        <div class="bg-f6f6f6 rounded-3 p-4">
+                            <div class="mb-3">
+                                <h6 class="fw-bold mb-0">Arrives by Monday, June 7</h6>
+                            </div>
+                            <hr class="my-3 opacity-10">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fw-bold mb-0">Delivery Charges</p>
+                                    <p class="text-muted mb-0 extra-small">Additional fees may apply</p>
+                                </div>
+                                <span class="fw-bold">$5.00</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="my-5 opacity-10">
+
+                    <!-- Payment Method -->
+                    <section class="mb-5 text-start">
+                        <h4 class="fw-bold mb-2">Payment Method</h4>
+                        <p class="text-muted small mb-4">All transactions are secure and encrypted.</p>
+
+                        <div class="bg-f6f6f6 rounded-3 p-0 overflow-hidden">
+                            <!-- Credit Card -->
+                            <div class="p-4 border-bottom border-light">
+                                <div class="form-check d-flex align-items-start">
+                                    <input class="form-check-input mt-1" type="radio" name="payment-method"
+                                        id="creditCard" checked>
+                                    <div class="ms-3 w-100">
+                                        <label class="form-check-label fw-bold d-block mb-1" for="creditCard">Credit
+                                            Card</label>
+                                        <span class="text-muted small">We accept all major credit cards.</span>
+
+                                        <div class="d-flex gap-2 mt-4 mb-4 flex-wrap">
+                                            <div class=" px-3 py-2 d-flex align-items-center">
+                                                <img src="./assets/images/checkout/googlepay.png" alt="GPay">
+                                            </div>
+                                            <div class=" px-3 py-2 d-flex align-items-center">
+                                                <img src="./assets/images/checkout/visa.png" alt="Visa">
+                                            </div>
+                                            <div class=" px-3 py-2 d-flex align-items-center">
+                                                <img src="./assets/images/checkout/paypal.png" alt="PayPal">
+                                            </div>
+                                            <div class=" px-3 py-2 d-flex align-items-center">
+                                                <img src="./assets/images/checkout/paypass.png" alt="Paypass">
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <input type="text"
+                                                    class="form-control py-3 px-3 bg-white border border-light"
+                                                    placeholder="Card number">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text"
+                                                    class="form-control py-3 px-3 bg-white border border-light"
+                                                    placeholder="Name on card">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text"
+                                                    class="form-control py-3 px-3 bg-white border border-light"
+                                                    placeholder="Expiration date (MM / YY)">
+                                            </div>
+                                            <div class="col-md-6 position-relative">
+                                                <input type="password"
+                                                    class="form-control py-3 px-3 bg-white border border-light"
+                                                    placeholder="Security Code">
+                                                <i
+                                                    class="fa-regular fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cash on delivery -->
+                            <div class="p-4 border-bottom border-light">
+                                <div class="form-check d-flex align-items-start">
+                                    <input class="form-check-input mt-1" type="radio" name="payment-method" id="cod">
+                                    <div class="ms-3">
+                                        <label class="form-check-label fw-bold d-block mb-1" for="cod">Cash on
+                                            delivery</label>
+                                        <span class="text-muted small">Pay with cash upon delivery.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PayPal -->
+                            <div class="p-4">
+                                <div class="form-check d-flex align-items-start">
+                                    <input class="form-check-input mt-1" type="radio" name="payment-method" id="paypal">
+                                    <div class="ms-3">
+                                        <label class="form-check-label fw-bold d-block" for="paypal">Paypal</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="text-start">
+                        <button class="btn bg-purple text-white px-5 py-2 rounded-3 fw-medium">Pay Now</button>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Order Summary -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 text-start">
+                        <h5 class="fw-bold border-bottom pb-4 mb-4">Order Summary</h5>
+                        <div class="order-items mb-4">
+                            <!-- Item 1 -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="./assets/images/productdetails/smallimage1.png"
+                                        class="rounded object-fit-cover" width="60" height="60"
+                                        alt="Blue Flower Print Crop Top">
+                                    <div class="ms-3">
+                                        <h6 class="fw-bold mb-0 small order-item-title">Blue Flower Print Crop Top <span
+                                                class="text-muted fw-normal">x 1</span></h6>
+                                        <p class="mb-0 text-muted extra-small order-item-color"><strong>Color:</strong>
+                                            Yellow</p>
+                                        <span class="text-muted fw-normal extra-small d-md-none order-item-qty">Qty:
+                                            1</span>
+                                    </div>
+                                </div>
+                                <span class="fw-bold text-muted small ms-2">$29.00</span>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="./assets/images/productdetails/smallimage2.png"
+                                        class="rounded object-fit-cover" width="60" height="60" alt="Lavender Hoodie">
+                                    <div class="ms-3">
+                                        <h6 class="fw-bold mb-0 small order-item-title">Lavender Hoodie <span
+                                                class="text-muted fw-normal">x
+                                                2</span></h6>
+                                        <p class="mb-0 text-muted extra-small order-item-color"><strong>Color:</strong>
+                                            Lavender</p>
+                                        <span class="text-muted fw-normal extra-small d-md-none order-item-qty">Qty:
+                                            2</span>
+                                    </div>
+                                </div>
+                                <span class="fw-bold text-muted small ms-2">$119.00</span>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="./assets/images/productdetails/smallimage3.png"
+                                        class="rounded object-fit-cover" width="60" height="60" alt="Black Sweatshirt">
+                                    <div class="ms-3">
+                                        <h6 class="fw-bold mb-0 small order-item-title">Black Sweatshirt <span
+                                                class="text-muted fw-normal">x
+                                                2</span></h6>
+                                        <p class="mb-0 text-muted extra-small order-item-color"><strong>Color:</strong>
+                                            Black</p>
+                                        <span class="text-muted fw-normal extra-small d-md-none order-item-qty">Qty:
+                                            2</span>
+                                    </div>
+                                </div>
+                                <span class="fw-bold text-muted small ms-2">$123.00</span>
+                            </div>
+                        </div>
+
+                        <div class="order-totals pt-4 border-top">
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <span class="fw-bold me-2">Subtotal <span class="text-muted fw-normal">( 3 items
+                                        )</span></span>
+                                <span class="fw-bold">$513.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <span class="fw-bold me-2">Savings</span>
+                                <span class="fw-bold">-$30.00</span>
+                            </div>
+                            <hr class="my-3 opacity-10">
+                            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                                <span class="fw-bold me-2">Shipping</span>
+                                <span class="fw-bold">-$5.00</span>
+                            </div>
+                            <hr class="my-3 opacity-10">
+                            <div class="d-flex justify-content-between align-items-center mb-0 flex-wrap">
+                                <span class="fw-bold me-2">Total</span>
+                                <span class="fw-bold">$478.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-3C4242">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-3 col-12 py-4 d-flex flex-column gap-4 text-start">
+                    <div class="text-light fw-bold fs-4"> Need Help</div>
+                    <div>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="nav-link text-light" href="#">Contact Us</a>
+                            <a class="nav-link text-light" href="#">Track Order</a>
+                            <a class="nav-link text-light" href="#">Returns & Refunds</a>
+                            <a class="nav-link text-light" href="#">FAQ's</a>
+                            <a class="nav-link text-light" href="#">Career</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-3 col-12 py-4 d-flex flex-column gap-4 text-start">
+                    <div class="text-light fw-bold fs-4"> Company</div>
+                    <div>
+                        <div class="d-flex flex-column gap-2 ">
+                            <a class="nav-link text-light" href="#">About Us</a>
+                            <a class="nav-link text-light" href="#">euphoria Blog</a>
+                            <a class="nav-link text-light" href="#">euphoriastan</a>
+                            <a class="nav-link text-light" href="#">Collaboration</a>
+                            <a class="nav-link text-light" href="#">Media</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-3 col-12 py-4 d-flex flex-column gap-4 text-start">
+                    <div class="text-light fw-bold fs-4"> More Info</div>
+                    <div>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="nav-link text-light" href="#">Term and Conditions</a>
+                            <a class="nav-link text-light" href="#">Privacy Policy</a>
+                            <a class="nav-link text-light" href="#">Shipping Policy</a>
+                            <a class="nav-link text-light" href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-3 col-12 py-4 d-flex flex-column gap-4 text-start">
+                    <div class="text-light fw-bold fs-4"> Location</div>
+                    <div>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="nav-link text-light" href="#">support@euphoria.in</a>
+                            <a class="nav-link text-light" href="#">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                            <a class="nav-link text-light" href="#">(NH 8- Near Mahadev Hotel) Udaipur, India-
+                                313002</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                    <div
+                        class="d-flex h-100 gap-3 align-items-end flex-wrap justify-content-center justify-content-md-start">
+                        <a href="#"><img src="./assets/images/base/facebook.svg" alt="facebook" class="social-icon"></a>
+                        <a href="#"><img src="./assets/images/base/instagram.svg" alt="instagram"
+                                class="social-icon"></a>
+                        <a href="#"><img src="./assets/images/base/twitter.svg" alt="twitter" class="social-icon"></a>
+                        <a href="#"><img src="./assets/images/base/linkedin.svg" alt="linkedin" class="social-icon"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-md-end text-start mt-4 mt-md-0">
+                    <p class="text-light fw-bold fs-4 mb-3">Download The App</p>
+                    <div class="d-flex gap-3 justify-content-md-end justify-content-start">
+                        <a href="#"><img src="./assets/images/base/googleplay.png" alt="Google Play Store"
+                                class="img-fluid" style="height: 40px;"></a>
+                        <a href="#"><img src="./assets/images/base/appstore.png" alt="Apple App Store" class="img-fluid"
+                                style="height: 40px;"></a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <hr class="border-secondary opacity-25 my-4">
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="text-light fs-5 fw-bold mb-0">Popular Categories</p>
+                        <a href="#"><i class="fa-solid fa-chevron-down text-light"></i></a>
+                    </div>
+                    <hr class="border-secondary opacity-25 mb-4">
+                    <p class="text-light text-center small mb-0 opacity-50">Copyright &copy; 2023 Euphoria Folks Pvt
+                        Ltd. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

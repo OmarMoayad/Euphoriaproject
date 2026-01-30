@@ -2,9 +2,7 @@
     --primary-color: #8A33FD;
 }
 
-body {
-    padding-top: 70px;
-}
+
 
 .bg-3C4242 {
     background-color: #3C4242;
@@ -14,10 +12,11 @@ body {
     background-color: #F6F6F6;
 }
 
-html,
-body {
-    max-width: 100%;
+.bg-primary-color {
+    background-color: var(--primary-color);
 }
+
+
 
 .social-icon {
     background-color: white;
@@ -29,14 +28,58 @@ body {
     transition: transform 0.2s;
 }
 
+.order-items h6 {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.order-items div.flex-grow-1 {
+    min-width: 0;
+}
+
+@media (max-width: 576px) {
+    .order-items .d-flex.justify-content-between {
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .order-items .d-flex.align-items-center.flex-grow-1 {
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .order-items .ms-3 {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+    }
+
+    .order-item-title,
+    .order-item-color {
+        display: none !important;
+    }
+
+    .order-item-qty {
+        display: block !important;
+        font-weight: bold;
+        color: #3c4242 !important;
+        margin-bottom: 0.25rem;
+    }
+
+    .order-items span.fw-bold {
+        margin-left: 0 !important;
+    }
+}
+
 .social-icon:hover {
     transform: translateY(-3px);
 }
 
 footer .text-light.fs-4 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
 }
 
-footer .nav-link:hover {
+footer .nav-link:focus,
+.nav-link:hover {
     color: var(--primary-color) !important;
 }
