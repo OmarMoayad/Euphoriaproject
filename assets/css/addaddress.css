@@ -1,0 +1,122 @@
+.sidebar {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.sidebar .nav-link {
+    color: #807D7E;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f6f6f6;
+    color: #3c4242;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f6f6f6;
+    color: #3c4242;
+    border-left: 4px solid #8A33FD;
+    font-weight: 600;
+}
+
+.sidebar-title {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar-subtitle {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+
+.purple-bar {
+    width: 6px;
+    height: 28px;
+    background-color: #8A33FD;
+    border-radius: 10px;
+}
+
+.form-label {
+    color: #3c4242;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    background-color: #F6F6F6;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #807D7E;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #F6F6F6;
+    box-shadow: none;
+    outline: 1px solid #8A33FD;
+}
+
+.form-control::placeholder {
+    color: #BEBCBD;
+}
+
+.btn-purple {
+    background-color: #8A33FD;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #7226d4;
+    color: #fff;
+}
+
+.btn-light-gray {
+    background-color: #F6F6F6;
+    color: #3C4242;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-light-gray:hover {
+    background-color: #ededed;
+}
+
+
+
+
+
+.breadcrumb-item a {
+    color: #807D7E;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item.active {
+    color: #3c4242;
+    font-weight: 500;
+}
+
+.form-check-input:checked {
+    background-color: #8A33FD;
+    border-color: #8A33FD;
+}
+
+.text-3C4242 {
+    color: #3C4242;
+}
