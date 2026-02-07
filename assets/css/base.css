@@ -1,6 +1,9 @@
 :root {
     --primary-color: #8A33FD;
 }
+body{
+ margin-top: 70px;
+}
 
 .bg-3C4242 {
     background-color: #3C4242;
@@ -16,6 +19,9 @@
 
 .bg-purple {
     background-color: var(--primary-color);
+}
+.bg-purple:hover {
+    background-color: #7225d3 ;
 }
 
 .social-icon {

@@ -63,10 +63,9 @@
         </nav>
     </header>
 
-    <main class="py-5 mt-5">
+    <main class="py-5">
         <div class="container">
-            <!-- Breadcrumbs -->
-            <nav aria-label="breadcrumb" class="mb-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"
                             class="text-decoration-none text-muted small fw-medium">Home</a></li>
@@ -76,16 +75,13 @@
                 </ol>
             </nav>
 
-            <!-- Title -->
             <div class="d-flex align-items-center mb-5">
                 <div class="bg-purple rounded-pill me-3" style="width: 6px; height: 30px;"></div>
                 <h2 class="text-dark fw-bold mb-0">Check Out</h2>
             </div>
 
             <div class="row g-4">
-                <!-- Left Column: Forms -->
                 <div class="col-lg-8">
-                    <!-- Billing Details -->
                     <section class="mb-5">
                         <h4 class="fw-bold mb-4">Billing Details</h4>
                         <form id="billing-form">
@@ -209,13 +205,11 @@
 
                     <hr class="my-5 opacity-10">
 
-                    <!-- Payment Method -->
                     <section class="mb-5 text-start">
                         <h4 class="fw-bold mb-2">Payment Method</h4>
                         <p class="text-muted small mb-4">All transactions are secure and encrypted.</p>
 
                         <div class="bg-f6f6f6 rounded-3 p-0 overflow-hidden">
-                            <!-- Credit Card -->
                             <div class="p-4 border-bottom border-light">
                                 <div class="form-check d-flex align-items-start">
                                     <input class="form-check-input mt-1" type="radio" name="payment-method"
@@ -268,7 +262,6 @@
                                 </div>
                             </div>
 
-                            <!-- Cash on delivery -->
                             <div class="p-4 border-bottom border-light">
                                 <div class="form-check d-flex align-items-start">
                                     <input class="form-check-input mt-1" type="radio" name="payment-method" id="cod">
@@ -280,7 +273,6 @@
                                 </div>
                             </div>
 
-                            <!-- PayPal -->
                             <div class="p-4">
                                 <div class="form-check d-flex align-items-start">
                                     <input class="form-check-input mt-1" type="radio" name="payment-method" id="paypal">
@@ -298,12 +290,10 @@
 
                 </div>
 
-                <!-- Right Column: Order Summary -->
                 <div class="col-lg-4">
                     <div class="card border-0 shadow-sm p-4 text-start">
                         <h5 class="fw-bold border-bottom pb-4 mb-4">Order Summary</h5>
                         <div class="order-items mb-4">
-                            <!-- Item 1 -->
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <div class="d-flex align-items-center flex-grow-1">
                                     <img src="./assets/images/productdetails/smallimage1.png"
@@ -320,7 +310,6 @@
                                 </div>
                                 <span class="fw-bold text-muted small ms-2">$29.00</span>
                             </div>
-                            <!-- Item 2 -->
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <div class="d-flex align-items-center flex-grow-1">
                                     <img src="./assets/images/productdetails/smallimage2.png"
@@ -337,7 +326,6 @@
                                 </div>
                                 <span class="fw-bold text-muted small ms-2">$119.00</span>
                             </div>
-                            <!-- Item 3 -->
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <div class="d-flex align-items-center flex-grow-1">
                                     <img src="./assets/images/productdetails/smallimage3.png"

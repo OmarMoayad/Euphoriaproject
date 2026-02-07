@@ -155,16 +155,9 @@
     color: #8A33FD;
 }
 
-/* Breadcrumb style */
-.breadcrumb {
-    background: transparent;
-    padding: 0;
-}
 
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ">";
-    color: #807D7E;
-}
+
+
 
 .breadcrumb-item a {
     color: #807D7E;
