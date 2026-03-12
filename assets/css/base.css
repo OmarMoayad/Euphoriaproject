@@ -55,3 +55,62 @@ footer .text-light.fs-4 {
 footer .nav-link:hover {
     color: var(--primary-color) !important;
 }
+
+
+/* Hello Jhanvi */
+.sidebar {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.sidebar .nav-link {
+    color: #807D7E;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f6f6f6;
+    color: #3c4242;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f6f6f6;
+    color: #3c4242;
+    border-left: 4px solid #8A33FD;
+    font-weight: 600;
+}
+
+.sidebar-title {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar-subtitle {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+
+.purple-bar {
+    width: 6px;
+    height: 28px;
+    background-color: #8A33FD;
+    border-radius: 10px;
+}
+.breadcrumb-item a {
+    color: #807D7E;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item.active {
+    color: #3c4242;
+    font-weight: 500;
+}
