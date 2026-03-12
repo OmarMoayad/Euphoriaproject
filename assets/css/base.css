@@ -12,6 +12,19 @@ body{
 .bg-f6f6f6 {
     background-color: #F6F6F6;
 }
+.btn-purple {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-purple:hover {
+    background-color: #7225d3;
+    color: white;
+}
 
 .bg-primary-color {
     background-color: var(--primary-color);
